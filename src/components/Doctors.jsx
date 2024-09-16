@@ -13,18 +13,18 @@ function Doctors() {
   ];
 
   // State to manage the number of visible patients
-  const [visibleCount, setVisibleCount] = useState(3); // Initial number of visible patients
+  const [visibleCount, setVisibleCount] = useState(3);
   const [showLess, setShowLess] = useState(false);
 
   const handleShowMore = () => {
-    setVisibleCount(prevCount => prevCount + 3); // Increase the number of visible patients
-    setShowLess(true); // Ensure the "Show Less" button is visible when expanded
+    setVisibleCount(prevCount => prevCount + 3);
+    setShowLess(true);
   };
 
   const handleShowLess = () => {
-    setVisibleCount(prevCount => Math.max(prevCount - 3, 3)); // Decrease the number of visible patients
+    setVisibleCount(prevCount => Math.max(prevCount - 3, 3));
     if (visibleCount <= 6) {
-      setShowLess(false); // Hide the "Show Less" button if we are back to the initial count
+      setShowLess(false);
     }
   };
 
@@ -33,16 +33,30 @@ function Doctors() {
       <div className="doctors-layout">
         <section className="doctors-content">
           <h2>Doctors Page</h2>
+
+          {/* Search Bar Display */}
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Enter Aadhar Number"
+              
+            />
+            <button className="search-btn" >Search</button>
+          </div>
+
+          {/* Patients List */}
           <div className="patients-list">
             <h3>Patients List</h3>
             <ul>
               {patients.slice(0, visibleCount).map(patient => (
                 <li key={patient.id}>
-                  <span>Name: {patient.name}</span>  <span>Age: {patient.age}</span>
+                  <span>Name: {patient.name}</span> <span>Age: {patient.age}</span>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Buttons to expand/collapse the list */}
           {visibleCount < patients.length && (
             <button className="show-more-btn" onClick={handleShowMore}>
               Show More
