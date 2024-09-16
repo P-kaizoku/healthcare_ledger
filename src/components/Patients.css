@@ -1,0 +1,53 @@
+/* src/components/Patients.css */
+
+.patients-page {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.patients-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.patients-content h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.patients-content p {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.patients-info,
+.patients-appointments {
+  margin-top: 20px;
+}
+
+.patients-info h2,
+.patients-appointments h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.patients-info ul,
+.patients-appointments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.patients-info li,
+.patients-appointments li {
+  font-size: 16px;
+  color: #34495e;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}

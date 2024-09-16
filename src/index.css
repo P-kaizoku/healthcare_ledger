@@ -1,0 +1,136 @@
+/* global.css */
+body {
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  background-color: #ecf0f1; /* Light background for the app */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for card effect */
+}
+
+h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #7f8c8d; /* Softer color for paragraph text */
+}
+
+/* global.css */
+.patients-list {
+  margin-top: 30px;
+}
+
+.patients-list h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.patients-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.patients-list li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.patients-list li span {
+  font-size: 18px;
+}
+
+/* index.css */
+
+/* Existing styles */
+/* ...existing styles... */
+
+/* Style for the Doctors page content */
+.doctors-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+}
+
+.doctors-content h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.patients-list {
+  margin-bottom: 20px; /* Space below the list to separate from buttons */
+}
+
+.patients-list h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.patients-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.patients-list li {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.patients-list li span {
+  font-size: 18px;
+}
+
+.show-more-btn, .show-less-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Space above the button */
+}
+
+.show-more-btn {
+  background-color: #3498db; /* Blue button */
+}
+
+.show-more-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.show-less-btn {
+  background-color: #e74c3c; /* Red button */
+}
+
+.show-less-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
